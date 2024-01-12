@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            position: fixed;
+            left: 40% ;
+        }
+        .emoji{
+            text-align: center;
+            margin: 10px;
+        }
+        .current{
+            color: blue;
+            font-weight: bolder;
+            text-align: center;
+        }
+        .current-temp{
+            color: black;
+            font-weight: lighter;
+        }
+        .bold-temp{
+            font-weight: bolder;
+        }
+        .upcoming{
+            font-size: small;
+            text-align: center;
+            margin: 20px;
+        }
+        .upcoming:hover{
+            background-color: antiquewhite;
+            transition: all 200ms ease-in-out;
+            border-radius: 30px;
+            border: 0px solid;
+
+        }
+        .days{
+            font-weight: bold;
+        }
+        .forecast{
+            margin: 5px;
+        }
+        .button{
+            padding: 10px 10px;
+            margin: auto;
+            color: white;
+            display: block;
+            border-radius: 30px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4) ;
+            border: 1px solid blue;
+            background-color: blue;
+        }
+        button:hover{
+            background-color: red;
+            border: 1px solid red;
+
+        }
+        .coder{
+            text-align: center;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="emoji">
+        🌤️
+    </div>
+    <div class="current" >
+        Currently 21° in Tokyo
+        <div class="current-temp">
+            13° / <span class="bold-temp">23°</span>
+        </div>
+    </div>
+    <div class="upcoming">
+        🌧️<span class="days"> Tomorrow</span>
+        <div class="forecast">
+            10° / <span class="bold-temp">22°</span>
+        </div>
+    </div>
+    <div class="upcoming">
+        🌥️<span class="days"> Saturday</span>
+        <div class="forecast">
+            15° /<span class="bold-temp">17°</span>
+        </div>
+    </div>
+    <div class="upcoming">
+        ☀️<span class="days"> Sunday</span>
+        <div class="forecast">
+            25° / <span class="bold-temp">28°</span>
+        </div>
+    </div>
+    <div class="city">
+        <button class="button">
+            Change city
+        </button>
+    </div>
+    <div class="coder">
+        Coded by Bonolo Atong
+    </div>
+</body>
+</html>
